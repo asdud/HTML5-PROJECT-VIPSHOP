@@ -1,0 +1,1291 @@
+<!doctype html><!--申明当前文档的类型 html类型-->
+<html><!--代表整个页面的开始-->
+	<head>
+		<!--申明当前页面的编码集: 中文编码(GBK/BG2312) 国际编码(UTF-8)-->
+		<meta http-equiv="content-type" content="text/html" charset="UTF-8">
+		<meta name="Keywords" content="关键字,关键词">
+		<meta name="Description" content="描述和简介">
+		<!--标题-->
+		<title>唯品会项目实战一</title>
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_428437_rh4w9jf4oql1sjor.css" />
+		<style type="text/css">
+			*{margin:0;padding:0;}
+			body,ul,li,ol,dl,dd,p,h1,h2,h3,h4,h5,h6{
+				margin:0;
+			}
+			body{
+				font-size:12px;
+				font-family:"微软雅黑";
+			}
+			a{text-decoration:none;color:#000;}
+			img{border:none;}
+			ol,ul{list-style:none;}
+
+			.main{
+				width:1000px;
+				margin:0 auto;
+			}
+			.FL{float:left;}
+			.FR{float:right;}
+			.clearfixed:after{
+				content:"";
+				display:block;
+				clear:both;
+			}
+		/*top s*/
+			/*nav s*/
+			#wrap #top .nav{
+				height:30px;
+				background:#f5f5f5;
+				overflow:hidden;
+			}
+			#wrap #top .nav .navCon{
+				height:30px;
+			}
+			#wrap #top .nav .navCon .list li{
+				float:left;
+			}
+			#wrap #top .nav .navCon .ulLi{
+				height:30px;
+				line-height:30px;
+				text-align:center;
+			}
+			#wrap #top .nav .navCon .first{
+				height:28px;
+				border:1px solid transparent;
+				margin-right:145px;
+			}
+			#wrap #top .nav .navCon .first .bat{
+				display:block;
+			}
+			#wrap #top .nav .navCon .first .bat .sjx{
+				margin-left:15px;
+			}
+			#wrap #top .bat .sjx{
+				font-size:12px;
+			}
+			#wrap #top .bat:hover .sjx1{
+				display:none;
+			}
+			#wrap #top .bat .sjx2{
+				display:none;
+			}
+			#wrap #top .bat:hover .sjx2{
+				display:inline-block;
+				color:#f6f;
+			}
+			#wrap #top .bat:hover .sjx3{
+				display:inline-block;
+				color:#fff;
+			}
+			#wrap #top .nav .navCon .bb:hover{
+				border:1px solid #ddd;
+				background:#fff;
+			}
+			#wrap #top .nav .navCon .list .ulLi:hover .fontCol{
+				color:#f6f;
+			}
+			#wrap #top .nav .navCon .list .ulLi{
+				padding:0px 18px;
+			}
+			#wrap #top .nav .navCon .list li:nth-child(2){
+				border:1px solid transparent;
+			}
+			#wrap #top .nav .navCon .list li:nth-child(3){
+				padding:0px 5px;
+			}
+			#wrap #top .nav .navCon .list li:nth-child(4){
+				/* width:98px; */
+				height:30px;
+			}
+			#wrap #top .nav .navCon .list .ulLi .bat .yl{
+				display:inline-block;
+				width:15px;
+				height:18px;
+				background:url("img/yl.gif")no-repeat;
+			}
+			/*nav e*/
+
+			#wrap #top .logo{
+				background:#fff;
+			}
+			#wrap #top .logo .logoCon .logoImg{
+				height:100px;
+				vertical-align:middle;
+			}
+			#wrap #top .logo .logoCon .bgImg{
+				background:url("img/bat.png")no-repeat;
+			}
+			#wrap #top .logo .logoCon .seaver{
+				width:340px;
+				height:100px;
+			}
+			#wrap #top .logo .logoCon .bag{
+				position:relative;
+				width:104px;
+				height:32px;
+				border-radius:5px;
+				border:1px solid #ddd;
+				margin-top:33px;
+				line-height:32px;
+				background:#ebebeb;
+			}
+			#wrap #top .logo .logoCon .bag:hover{
+				background:#fff;
+			}
+			#wrap #top .logo .logoCon .bag .spaImg{
+				position:absolute;
+				top:50%;
+				left:10px;
+				margin-top:-8px;
+				width:12px;
+				height:17px;
+				background-position:-93px -208px;
+			}
+			#wrap #top .logo .logoCon .bag .txt{
+				margin-left:30px;
+			}
+			#wrap #top .logo .logoCon .bag .number{
+				padding:0px 10px;
+				background:#f10180;
+				color:#fff;
+				border-radius:10px;
+			}
+			#wrap #top .head-inner{
+				background:#f10180;
+			}
+			#wrap #top .head-inner .headCon{
+				height:40px;
+			}
+			#wrap #top .head-inner .headCon .headUl li{
+				float:left;
+			}
+			#wrap #top .head-inner .headCon .headUl li .headbat{
+				display:block;
+				height:40px;
+				line-height:40px;
+				padding:0px 14px;
+				font-size:16px;
+				color:#fff;
+			}
+			#wrap #top .head-inner .headCon .headUl li.first{
+				font-weight:bold;
+				background:#bd1067;
+			}
+			#wrap #top .head-inner .headCon li:hover{
+				background:#db0a76;
+			}
+			#wrap #top .head-inner .headCon .headlist li{
+				float:left;
+				padding:0px 20px;
+				height:15px;
+				font-size:16px;
+				margin-top:14px;
+			}
+			#wrap #top .head-inner .headCon .headlist li .headA{
+				display:block;
+				color:#fff;
+				margin-top:-10px;
+			}
+			#wrap #top .head-inner .headCon .headlist li .headA .headImg{
+				vertical-align:middle;
+			}
+			#wrap #top .head-inner .headCon .headlist li .headA .txt{
+				vertical-align:middle;
+			}
+			#wrap #top .head-inner .headCon .headlist li.bor{
+				height:13px;
+				width:1px;
+				border-left:1px solid #000;
+				padding:0;
+				margin-top:15px;
+			}
+		/*top e*/
+
+		/*banner s*/
+			#wrap #banner{
+				height:1000px;
+				background:url("img/banner.jpg")no-repeat center;
+				background-size:cover;
+				padding-top:30px;
+			}
+			#wrap #banner .banTop{
+				height:383px;
+				padding-top:10px;
+				text-align:center;
+				background: #fff;
+			}
+			#wrap #banner .banTop .banImg{
+				position:relative;
+				width:976px;
+				hieight:340px;
+				margin:0px auto;
+			}
+			#wrap #banner .banTop .banUl{
+				width:394px;
+				margin:0px auto;
+			}
+			#wrap #banner .banTop .banUl .banLi{
+				position:relative;
+				float:left;
+				width:197px;
+				height:40px;
+				line-height:40px;
+				text-align:center;
+			}
+			#wrap #banner .banTop .banUl .banLi .butBor{
+				position:absolute;
+				bottom:-3px;
+				left:0px;
+				height:3px;
+				width:197px;
+				background:#f10180;
+			}
+			#wrap #banner .banTop .banImg .btn{
+				position:absolute;
+				top:50%;
+				margin-top:-33px;
+				width:33px;
+				height:66px;
+				line-height:66px;
+				background:#000;
+				font-size:30px;
+				font-weight:bold;
+				color:#fff;
+				opacity:0.5;
+				display:none;
+			}
+			#wrap #banner .banTop .banImg .prove{
+				left:0px;
+			}
+			#wrap #banner .banTop .banImg .next{
+				right:0px;
+			}
+			#wrap #banner .banTop .banImg:hover .btn{
+				display:block;
+			}
+			#wrap #banner .banbut{
+				margin-top:30px;
+				height:576px;
+				overflow:hidden;
+			}
+			#wrap #banner .banbut .banCon{
+				width:1020px;
+			}
+			#wrap #banner .banbut .banCon .butTop{
+				float:left;
+				width:496px;
+				margin-right:5px;
+				margin-bottom:5px;
+			}
+			#wrap #banner .banbut .banCon img{
+				width:100%;
+				vertical-align:middle;
+			} 
+			#wrap #banner .banbut .banCon .butFoot{
+				width:328px;
+			}
+		/*banner e*/
+	
+		/*content s*/
+			#wrap .boxF1{
+				margin-top:7px;
+			}
+			#wrap .boxF1 .f1Top{
+				height:68px;
+				background:url("img/today_DDp.png")no-repeat center;
+			}
+			#wrap .boxF1 .f1Con1{
+				width:1020px;
+				margin-top:20px;
+			}
+			#wrap .boxF1 .f1Con1 .conImg{
+				position:relative;
+				float:left;
+				width:320px;
+				height:199px;
+				margin-right:20px;
+			}
+			#wrap .boxF1 .f1Con1 .conImg .f1Img1{
+				width:100%;
+			}
+			#wrap .boxF1 .f1Con1 .conImg .f1Img2{
+				position:absolute;
+				top:33px;
+				left:19px;
+				width:137px;
+
+			}
+			#wrap .boxF1 .f1Con1 .conImg .conTxt{
+				position:absolute;
+				bottom:8px;
+				left:8px;
+				width:310px;
+				height:88px;
+			}
+			#wrap .boxF1 .f1Con1 .conImg .conTxt .imgList .txtImg{
+				float:left;
+				width:98px;
+				height:88px;
+				text-align:center;
+				line-height:88px;
+				background:#fff;
+				margin-right:5px;
+			}
+			#wrap .boxF1 .f1Con1 .conImg .conTxt .imgList .txtImg .f1TxtImg1{
+				width:60px;
+				margin-top:7px;
+			}
+			#wrap .boxF1 .f1Con2{
+				margin-top:20px;
+				width:1020px;
+			}
+			#wrap .boxF1 .f1Con2 .con2Img{
+				position:relative;
+				float:left;
+				width:490px;
+				height:300px;
+				margin-right:20px;
+				margin-bottom:20px;
+			}
+			#wrap .boxF1 .f1Con2 .con2Img .com2Img1{
+				width:100%;
+			}
+			#wrap .boxF1 .f1Con2 .con2Img .txtBat{
+				position:absolute;
+				bottom:20px;
+				left:50%;
+				width:320px;
+				height:100px;
+				background:#fff;
+				margin-left:-160px;
+				text-align:center;
+			}
+			#wrap .boxF1 .f1Con2 .con2Img .txtBat .con2Img2{
+				width:100px;
+				height:50px;
+				margin:6px 0px 3px;
+			}
+			#wrap .boxF1 .f1Con2 .con2Img .txtBat .con2Txt1{
+				font-weight:bold;
+				font-size:14px;
+			}
+			#wrap .boxF1 .f1Con2 .con2Img .conHov{
+				position:absolute;
+				display:none;
+				top:20px;
+				left:20px;
+				width:450px;
+				height:260px;
+			}
+			#wrap .boxF1 .f1Con2 .con2Img:hover .conHov{
+				display:block;
+				box-shadow:0px 0px 10px 20px rgba(255,255,255,0.3);
+			}
+			#wrap .boxF1 .f1Con2 .con2Img .conHov .hovImg{
+				float:left;
+				height:185px;
+				width:121px;
+				margin-top:14px;
+				padding-left:30px;
+			}
+			#wrap .boxF1 .f1Con2 .con2Img .conHov .hovImg1{
+				padding-left:15px;
+			}
+			#wrap .boxF1 .f1Con2 .con2Img .conHov .hovImg .txtImg1{
+				width:121px;
+				height:153px;
+			}
+			#wrap .boxF1 .f1Con2 .con2Img .conHov .hovImg .pri{
+				text-align:center;
+				font-size:14px;
+				font-weight:bold;
+			}
+			#wrap .boxF1 .f1Con2 .con2Img .conHov .con2Txt{
+				height:60px;
+				width:100%;
+				float:left;
+				border-top:1px dotted #333;
+			}
+			#wrap .boxF1 .f1Con2 .con2Img .conHov .con2Txt .txtImg2{
+				float:left;
+				width:100px;
+				ehight:50px;
+				margin-left:19px;
+				margin-top:5px;
+				margin-right:20px;
+			}
+			#wrap .boxF1 .f1Con2 .con2Img .conHov .con2Txt .spaTxt{
+				float:left;
+				display:inline-block;
+				padding:3px 5px;
+				border:1px dotted #ccc;
+				margin-top:20px;
+				border-radius:8px;
+			}
+			#wrap .boxF1 .f1Con2 .con2Img .conHov .con2Txt .spaTxt i{
+				color:#f10180;
+			}
+			#wrap .boxF1 .f1Con2 .con2Img .conHov .con2Txt .spaTxt:hover{
+				color:#fff;
+				background:#f10180;
+			}
+			#wrap .boxF1 .f1Con2 .con2Img .conHov .con2Txt .spaTxt:hover i{
+				color:#fff;
+			}
+			#wrap .boxF1 .f1Con2 .con2Img .conHov .con2Txt .spaTxt1{
+				display:inline-block;
+				width:117px;
+				height:22px;
+				border:1px solid #000;
+				margin-top:20px;
+				margin-left:85px;
+				text-align:center;
+				line-height:22px;
+				font-size:14px;
+			}
+			#wrap .boxF1 .f1Con2 .con2Img .conHov .con2Txt .spaTxt1:hover{
+				background:#000;
+				color:#fff;
+			}
+		/*content e*/
+
+		/*footer s*/
+			#wrap #footer{
+				border-top:1px dotted #333;
+				margin-top:170px;
+				padding-top:15px;
+			}
+			#wrap #footer .forCon .listImg .line{
+				float:left;
+				width:96px;
+				height:105px;
+				background:url("img/footer.png")no-repeat;
+			}
+			#wrap #footer .forCon .listImg .line:nth-child(1){
+				background-position:20px 12px;
+			}
+			#wrap #footer .forCon .listImg .line:nth-child(2){
+				background-position:-60px 12px;
+			}
+			#wrap #footer .forCon .listImg .line:nth-child(3){
+				background-position:-140px 12px;
+			}
+			#wrap #footer .forCon .listImg .line:nth-child(4){
+				background-position:-220px 12px;
+			}
+			#wrap #footer .forCon .listImg .line:nth-child(5){
+				background-position:-300px 12px;
+			}
+			#wrap #footer .forCon .listImg .line:nth-child(6){
+				background-position:-380px 12px;
+			}
+			#wrap #footer .forCon .listImg .line:nth-child(7){
+				background-position:-460px 12px;
+			}
+			#wrap #footer .forCon .listImg .line:nth-child(8){
+				background-position:-540px 12px;
+			}
+			#wrap #footer .forCon .listImg .line:nth-child(9){
+				background-position:-620px 12px;
+			}
+			#wrap #footer .forCon .listImg .line:nth-child(10){
+				background-position:-700px 12px;
+			}
+			#wrap #footer .forCon .boxNav{
+				height:150px;
+				margin-top:20px;
+			}
+			#wrap #footer .forCon .boxNav .fooNav{
+				float:left;
+				width:145px;
+				height:146px;
+				padding-left:20px;
+				border-right:1px solid grey;
+			}
+			#wrap #footer .forCon .boxNav .fooLast{
+				border-right:none;
+			}
+			#wrap #footer .forCon .boxNav .fooNav .tit{
+				margin-bottom:5px;
+			}
+			#wrap #footer .forCon .boxNav .fooNav .dis{
+				background:url("img/footd.png")no-repeat -4px -497px;
+				padding-left:10px;
+				line-height:18px;
+				transition:margin-left 1s;
+			}
+			#wrap #footer .forCon .boxNav .fooNav .dis a{
+				color:grey;
+			}
+			#wrap #footer .forCon .boxNav .fooNav .dis:hover{
+				margin-left:3px;
+				background-position:-4px -516px;
+				
+			}
+			#wrap #footer .forCon .boxNav .fooNav .dis:hover a{
+				color:#f10180;
+			}
+			#wrap #footer .forCon .forbut{
+				margin-top:25px;
+				text-align:center;
+			}
+			#wrap #footer .forCon .forbut .butTxt{
+				height:30px;
+				background:#d7237e;
+				line-height:30px;
+				margin-bottom:15px;
+			
+			}
+			#wrap #footer .forCon .forbut .butTxt a{
+				color:#fff;
+			}
+			#wrap #footer .forCon .forbut .butTxt a:hover{
+				color:#acacac;
+			}
+			#wrap #footer .forCon .forbut .butTxt1{
+				line-height:20px;
+			}
+			#wrap #footer .forCon .forbut .butTxt1 a:hover{
+				color:#f10180;
+			}
+			#wrap #footer .forCon .forbut .butTxt1 .police{
+				vertical-align:middle;
+			}
+			#wrap #footer .forCon1 .listForImg{
+				width:625px;
+				height:40px;
+				margin:25px auto 0px;
+			}
+			#wrap #footer .forCon1 .listForImg .listImg{
+				float:left;
+				width:100px;
+				height:40px;
+				margin-right:9px;
+				background:url("img/footd.png")no-repeat;
+			}
+			#wrap #footer .forCon1 .listForImg .innerImg1{
+				width:105px;
+			}
+			#wrap #footer .forCon1 .listForImg .innerImg2{
+				width:100px;
+				background-position:0px -150px;
+			}
+			#wrap #footer .forCon1 .listForImg .innerImg3{
+				width:66px;
+				background-position:0px -200px;
+			}
+			#wrap #footer .forCon1 .listForImg .innerImg4{
+				width:71px;
+				background-position:0px -250px;
+			}
+			#wrap #footer .forCon1 .listForImg .innerImg5{
+				width:75px;
+				background-position:0px -300px;
+			}
+			#wrap #footer .forCon1 .listForImg .innerImg6{
+				width:77px;
+				background-position:0px -400px;
+			}
+			#wrap #footer .forCon1 .listForImg .innerImg7{
+				width:77px;
+				background-position:0px -450px;
+				margin-right:0px;
+			}
+
+		/*footer e*/
+			
+
+		</style>
+	</head>
+<body>
+	<!--wrap s-->
+	<div id="wrap">
+		<!--top s-->
+		<div id="top">
+			<div class="nav">
+				<div class="navCon main">
+					<ul class="list clearfixed">
+						<li class="first ulLi bb">
+							<a href="#" class="bat">
+							湖南
+							<i class="iconfont icon-sanjiaoxing sjx1 sjx"></i>
+							<i class="iconfont icon-sanjiaoxingshouhui sjx2 sjx"></i>
+							</a>
+
+						</li>
+						<li class="ulLi bb">
+							<a href="#" class="bat fontCol">请登录</a>
+						</li>
+						<li class="ulLi">
+							<a href="#" class="bat fontCol">注册</a>
+						</li>
+						<li class="ulLi">
+							<a href="#" class="bat">
+								<span class="yl"></span>
+								签到有礼
+							</a>
+						</li>
+						<li class="ulLi">
+							<a href="#" class="bat fontCol">我的订单</a>
+						</li>
+						<li class="ulLi">
+							<a href="#" class="bat fontCol">
+								我的特卖
+								<i class="iconfont icon-sanjiaoxing sjx1 sjx"></i>
+								<i class="iconfont icon-sanjiaoxingshouhui sjx2 sjx"></i>
+							</a>
+						</li>
+						<li class="ulLi">
+							<a href="#" class="bat fontCol">会员俱乐部</a>
+						</li>
+						<li class="ulLi">
+							<a href="#" class="bat fontCol">
+								客户服务
+								<i class="iconfont icon-sanjiaoxing sjx1 sjx"></i>
+								<i class="iconfont icon-sanjiaoxingshouhui sjx2 sjx"></i>
+							</a>
+						</li>
+						<li class="ulLi">
+							<a href="#" class="bat fontCol">
+								<i class="iconfont icon-shouji"></i>
+								手机版
+							</a>
+						</li>
+						<li class="ulLi">
+							<a href="#" class="bat fontCol">
+								更多
+								<i class="iconfont icon-sanjiaoxing sjx1 sjx"></i>
+								<i class="iconfont icon-sanjiaoxingshouhui sjx2 sjx"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="logo">
+				<div class="logoCon main clearfixed">
+					<img src="img/logo.png" alt="" class="logoImg FL" />
+					<div class="seaver bgImg FL"></div>
+					<div class="bag FR">
+						<span class="spaImg bgImg"></span>
+						<span class="txt">购物袋</span>
+						<span class="number">0</span>
+					</div>
+				</div>
+			</div>
+			<div class="head-inner">
+				<div class="headCon main">
+					<ul class="headUl FL clearfixed">
+						<li class="first">
+							<a href="" class="headbat">首页</a>
+						</li>
+						<li>
+							<a href="" class="headbat">女装</a>
+						</li>
+						<li>
+							<a href="" class="headbat">母婴</a>
+						</li>
+						<li>
+							<a href="" class="headbat">美妆</a>
+						</li>
+						<li>
+							<a href="" class="headbat">国际</a>
+						</li>
+						<li>
+							<a href="" class="headbat">男士</a>
+						</li>
+						<li>
+							<a href="" class="headbat">居家</a>
+						</li>
+						<li>
+							<a href="" class="headbat">鞋包</a>
+						</li>
+						<li>
+							<a href="" class="headbat">运动</a>
+						</li>
+						<li>
+							<a href="" class="headbat">生活</a>
+						</li>
+						<li>
+							<a href="" class="headbat bat">
+								更多
+								<i class="iconfont icon-sanjiaoxing sjx1 sjx"></i>
+								<i class="iconfont icon-sanjiaoxingshouhui sjx2 sjx sjx3"></i>
+							</a>
+						</li>
+					</ul>
+					<ul class="headlist FR clearfixed">
+						<li class="first">
+							<a href="" class="headA">
+								<img src="img/fl.png" alt="" class="headImg" />
+								<span class="txt">分类</span>
+							</a>
+						</li>
+						<li class="bor"></li>
+						<li>
+							<a href="" class="headA">
+								<img src="img/yg.png" alt="" class="headImg" />
+								<span class="txt">预告</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--top e-->
+		<!--banner s-->
+		<div id="banner">
+			<div class="banTop main">
+				<div class="banImg">
+					<img src="img/banImg.jpg" height="340" alt="" />
+					<i class="prove btn iconfont icon-jiankuohaoxizuo"></i>
+					<i class="next btn iconfont icon-jiankuohaoxiyou"></i>
+				</div>
+				<ul class="banUl clearfixed">
+					<li class="banLi">
+						<a href="">罗莱生活VIP大牌日</a>
+						<span class="butBor"></span>
+					</li>
+					<li class="banLi"><a href="">新人专享2重礼</a></li>
+				</ul>
+			</div>
+			<div class="banbut main">
+				<div class="banCon clearfixed">
+					<div class="butTop">
+						<a href="">
+							<img src="img/butImg1.jpg" alt="" />
+						</a>
+					</div>
+					<div class="butTop">
+						<a href="">
+							<img src="img/butImg1.jpg" alt="" />
+						</a>
+					</div>
+				</div>
+				<div class="banCon clearfixed">
+					<div class="butTop">
+						<a href="">
+							<img src="img/butImg1.jpg" alt="" />
+						</a>
+					</div>
+					<div class="butTop">
+						<a href="">
+							<img src="img/butImg1.jpg" alt="" />
+						</a>
+					</div>
+				</div>
+				<div class="banCon clearfixed">
+					<div class="butTop butFoot">
+						<a href="">
+							<img src="img/footImg.jpg" alt="" />
+						</a>
+					</div>
+					<div class="butTop butFoot">
+						<a href="">
+							<img src="img/footImg.jpg" alt="" />
+						</a>
+					</div>
+					<div class="butTop butFoot">
+						<a href="">
+							<img src="img/footImg.jpg" alt="" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--banner e-->
+		<!--content s-->
+		<div id="content">
+			<div class="boxF1 main">
+				<div class="f1Top"></div>
+				<div class="f1Con1 clearfixed">
+					<div class="conImg">
+						<a href="">
+							<img src="img/zhuanshu_01.jpg" alt="" class="f1Img1" />
+							<img src="img/zhuanshu-text.png" alt="" class="f1Img2" />
+							<div class="conTxt">
+								<ul class="imgList">
+									<li class="txtImg">
+										<a href="">
+											<img src="img/e1.jpg" alt="" class="f1TxtImg1" />
+										</a>
+									</li>
+									<li class="txtImg">
+										<a href="">
+											<img src="img/e1.jpg" alt="" class="f1TxtImg1" />
+										</a>
+									</li>
+									<li class="txtImg">
+										<a href="">
+											<img src="img/e1.jpg" alt="" class="f1TxtImg1" />
+										</a>
+									</li>
+								</ul>
+							</div>
+						</a>
+					</div>
+					<div class="conImg">
+						<a href="">
+							<img src="img/zhuanshu_01.jpg" alt="" class="f1Img1" />
+							<img src="img/zhuanshu-text.png" alt="" class="f1Img2" />
+							<div class="conTxt">
+								<ul class="imgList">
+									<li class="txtImg">
+										<a href="">
+											<img src="img/e1.jpg" alt="" class="f1TxtImg1" />
+										</a>
+									</li>
+									<li class="txtImg">
+										<a href="">
+											<img src="img/e1.jpg" alt="" class="f1TxtImg1" />
+										</a>
+									</li>
+									<li class="txtImg">
+										<a href="">
+											<img src="img/e1.jpg" alt="" class="f1TxtImg1" />
+										</a>
+									</li>
+								</ul>
+							</div>
+						</a>
+					</div>
+					<div class="conImg">
+						<a href="">
+							<img src="img/zhuanshu_01.jpg" alt="" class="f1Img1" />
+							<img src="img/zhuanshu-text.png" alt="" class="f1Img2" />
+							<div class="conTxt">
+								<ul class="imgList">
+									<li class="txtImg">
+										<a href="">
+											<img src="img/e1.jpg" alt="" class="f1TxtImg1" />
+										</a>
+									</li>
+									<li class="txtImg">
+										<a href="">
+											<img src="img/e1.jpg" alt="" class="f1TxtImg1" />
+										</a>
+									</li>
+									<li class="txtImg">
+										<a href="">
+											<img src="img/e1.jpg" alt="" class="f1TxtImg1" />
+										</a>
+									</li>
+								</ul>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="f1Con2 clearfixed">
+					<div class="con2Img">
+						<a href="">
+							<img src="img/PC24.jpg" alt="" class="com2Img1" />
+						</a>
+						<a href="" class="txtBat">
+							<img src="img/primary.png" alt="" class="con2Img2" />
+							<p class="con2Txt1">年度盛宴  品味罗莱</p>
+							<p class="con2Txt2">满498减100，上不封顶</p>
+						</a>
+						<div class="conHov clearfixed">
+							<div class="hovImg">
+								<img src="img/hovimg.jpg" alt="" class="txtImg1" />
+								<p class="pri">￥799</p>
+							</div>
+							<div class="hovImg hovImg1">
+								<img src="img/hovimg.jpg" alt="" class="txtImg1" />
+								<p class="pri">￥799</p>
+							</div>
+							<div class="hovImg hovImg1">
+								<img src="img/hovimg.jpg" alt="" class="txtImg1" />
+								<p class="pri">￥799</p>
+							</div>
+							<div class="con2Txt">
+								<img src="img/primary.png" alt="" class="txtImg2" />
+								<span class="spaTxt">
+									<i class="iconfont icon-aixin"></i>
+									收藏品牌
+								</span>
+								<span class="spaTxt1">进入专场</span>
+							</div>
+						</div>
+						
+					</div>
+					<div class="con2Img">
+						<a href="">
+							<img src="img/PC24.jpg" alt="" class="com2Img1" />
+						</a>
+						<a href="" class="txtBat">
+							<img src="img/primary.png" alt="" class="con2Img2" />
+							<p class="con2Txt1">年度盛宴  品味罗莱</p>
+							<p class="con2Txt2">满498减100，上不封顶</p>
+						</a>
+						<div class="conHov clearfixed">
+							<div class="hovImg">
+								<img src="img/hovimg.jpg" alt="" class="txtImg1" />
+								<p class="pri">￥799</p>
+							</div>
+							<div class="hovImg hovImg1">
+								<img src="img/hovimg.jpg" alt="" class="txtImg1" />
+								<p class="pri">￥799</p>
+							</div>
+							<div class="hovImg hovImg1">
+								<img src="img/hovimg.jpg" alt="" class="txtImg1" />
+								<p class="pri">￥799</p>
+							</div>
+							<div class="con2Txt">
+								<img src="img/primary.png" alt="" class="txtImg2" />
+								<span class="spaTxt">
+									<i class="iconfont icon-aixin"></i>
+									收藏品牌
+								</span>
+								<span class="spaTxt1">进入专场</span>
+							</div>
+						</div>
+						
+					</div>
+					<div class="con2Img">
+						<a href="">
+							<img src="img/PC24.jpg" alt="" class="com2Img1" />
+						</a>
+						<a href="" class="txtBat">
+							<img src="img/primary.png" alt="" class="con2Img2" />
+							<p class="con2Txt1">年度盛宴  品味罗莱</p>
+							<p class="con2Txt2">满498减100，上不封顶</p>
+						</a>
+						<div class="conHov clearfixed">
+							<div class="hovImg">
+								<img src="img/hovimg.jpg" alt="" class="txtImg1" />
+								<p class="pri">￥799</p>
+							</div>
+							<div class="hovImg hovImg1">
+								<img src="img/hovimg.jpg" alt="" class="txtImg1" />
+								<p class="pri">￥799</p>
+							</div>
+							<div class="hovImg hovImg1">
+								<img src="img/hovimg.jpg" alt="" class="txtImg1" />
+								<p class="pri">￥799</p>
+							</div>
+							<div class="con2Txt">
+								<img src="img/primary.png" alt="" class="txtImg2" />
+								<span class="spaTxt">
+									<i class="iconfont icon-aixin"></i>
+									收藏品牌
+								</span>
+								<span class="spaTxt1">进入专场</span>
+							</div>
+						</div>
+						
+					</div>
+					<div class="con2Img">
+						<a href="">
+							<img src="img/PC24.jpg" alt="" class="com2Img1" />
+						</a>
+						<a href="" class="txtBat">
+							<img src="img/primary.png" alt="" class="con2Img2" />
+							<p class="con2Txt1">年度盛宴  品味罗莱</p>
+							<p class="con2Txt2">满498减100，上不封顶</p>
+						</a>
+						<div class="conHov clearfixed">
+							<div class="hovImg">
+								<img src="img/hovimg.jpg" alt="" class="txtImg1" />
+								<p class="pri">￥799</p>
+							</div>
+							<div class="hovImg hovImg1">
+								<img src="img/hovimg.jpg" alt="" class="txtImg1" />
+								<p class="pri">￥799</p>
+							</div>
+							<div class="hovImg hovImg1">
+								<img src="img/hovimg.jpg" alt="" class="txtImg1" />
+								<p class="pri">￥799</p>
+							</div>
+							<div class="con2Txt">
+								<img src="img/primary.png" alt="" class="txtImg2" />
+								<span class="spaTxt">
+									<i class="iconfont icon-aixin"></i>
+									收藏品牌
+								</span>
+								<span class="spaTxt1">进入专场</span>
+							</div>
+						</div>
+						
+					</div>
+					<div class="con2Img">
+						<a href="">
+							<img src="img/PC24.jpg" alt="" class="com2Img1" />
+						</a>
+						<a href="" class="txtBat">
+							<img src="img/primary.png" alt="" class="con2Img2" />
+							<p class="con2Txt1">年度盛宴  品味罗莱</p>
+							<p class="con2Txt2">满498减100，上不封顶</p>
+						</a>
+						<div class="conHov clearfixed">
+							<div class="hovImg">
+								<img src="img/hovimg.jpg" alt="" class="txtImg1" />
+								<p class="pri">￥799</p>
+							</div>
+							<div class="hovImg hovImg1">
+								<img src="img/hovimg.jpg" alt="" class="txtImg1" />
+								<p class="pri">￥799</p>
+							</div>
+							<div class="hovImg hovImg1">
+								<img src="img/hovimg.jpg" alt="" class="txtImg1" />
+								<p class="pri">￥799</p>
+							</div>
+							<div class="con2Txt">
+								<img src="img/primary.png" alt="" class="txtImg2" />
+								<span class="spaTxt">
+									<i class="iconfont icon-aixin"></i>
+									收藏品牌
+								</span>
+								<span class="spaTxt1">进入专场</span>
+							</div>
+						</div>
+						
+					</div>
+					<div class="con2Img">
+						<a href="">
+							<img src="img/PC24.jpg" alt="" class="com2Img1" />
+						</a>
+						<a href="" class="txtBat">
+							<img src="img/primary.png" alt="" class="con2Img2" />
+							<p class="con2Txt1">年度盛宴  品味罗莱</p>
+							<p class="con2Txt2">满498减100，上不封顶</p>
+						</a>
+						<div class="conHov clearfixed">
+							<div class="hovImg">
+								<img src="img/hovimg.jpg" alt="" class="txtImg1" />
+								<p class="pri">￥799</p>
+							</div>
+							<div class="hovImg hovImg1">
+								<img src="img/hovimg.jpg" alt="" class="txtImg1" />
+								<p class="pri">￥799</p>
+							</div>
+							<div class="hovImg hovImg1">
+								<img src="img/hovimg.jpg" alt="" class="txtImg1" />
+								<p class="pri">￥799</p>
+							</div>
+							<div class="con2Txt">
+								<img src="img/primary.png" alt="" class="txtImg2" />
+								<span class="spaTxt">
+									<i class="iconfont icon-aixin"></i>
+									收藏品牌
+								</span>
+								<span class="spaTxt1">进入专场</span>
+							</div>
+						</div>
+						
+					</div>
+					<div class="con2Img">
+						<a href="">
+							<img src="img/PC24.jpg" alt="" class="com2Img1" />
+						</a>
+						<a href="" class="txtBat">
+							<img src="img/primary.png" alt="" class="con2Img2" />
+							<p class="con2Txt1">年度盛宴  品味罗莱</p>
+							<p class="con2Txt2">满498减100，上不封顶</p>
+						</a>
+						<div class="conHov clearfixed">
+							<div class="hovImg">
+								<img src="img/hovimg.jpg" alt="" class="txtImg1" />
+								<p class="pri">￥799</p>
+							</div>
+							<div class="hovImg hovImg1">
+								<img src="img/hovimg.jpg" alt="" class="txtImg1" />
+								<p class="pri">￥799</p>
+							</div>
+							<div class="hovImg hovImg1">
+								<img src="img/hovimg.jpg" alt="" class="txtImg1" />
+								<p class="pri">￥799</p>
+							</div>
+							<div class="con2Txt">
+								<img src="img/primary.png" alt="" class="txtImg2" />
+								<span class="spaTxt">
+									<i class="iconfont icon-aixin"></i>
+									收藏品牌
+								</span>
+								<span class="spaTxt1">进入专场</span>
+							</div>
+						</div>
+						
+					</div>
+					<div class="con2Img">
+						<a href="">
+							<img src="img/PC24.jpg" alt="" class="com2Img1" />
+						</a>
+						<a href="" class="txtBat">
+							<img src="img/primary.png" alt="" class="con2Img2" />
+							<p class="con2Txt1">年度盛宴  品味罗莱</p>
+							<p class="con2Txt2">满498减100，上不封顶</p>
+						</a>
+						<div class="conHov clearfixed">
+							<div class="hovImg">
+								<img src="img/hovimg.jpg" alt="" class="txtImg1" />
+								<p class="pri">￥799</p>
+							</div>
+							<div class="hovImg hovImg1">
+								<img src="img/hovimg.jpg" alt="" class="txtImg1" />
+								<p class="pri">￥799</p>
+							</div>
+							<div class="hovImg hovImg1">
+								<img src="img/hovimg.jpg" alt="" class="txtImg1" />
+								<p class="pri">￥799</p>
+							</div>
+							<div class="con2Txt">
+								<img src="img/primary.png" alt="" class="txtImg2" />
+								<span class="spaTxt">
+									<i class="iconfont icon-aixin"></i>
+									收藏品牌
+								</span>
+								<span class="spaTxt1">进入专场</span>
+							</div>
+						</div>
+						
+					</div>
+					<div class="con2Img">
+						<a href="">
+							<img src="img/PC24.jpg" alt="" class="com2Img1" />
+						</a>
+						<a href="" class="txtBat">
+							<img src="img/primary.png" alt="" class="con2Img2" />
+							<p class="con2Txt1">年度盛宴  品味罗莱</p>
+							<p class="con2Txt2">满498减100，上不封顶</p>
+						</a>
+						<div class="conHov clearfixed">
+							<div class="hovImg">
+								<img src="img/hovimg.jpg" alt="" class="txtImg1" />
+								<p class="pri">￥799</p>
+							</div>
+							<div class="hovImg hovImg1">
+								<img src="img/hovimg.jpg" alt="" class="txtImg1" />
+								<p class="pri">￥799</p>
+							</div>
+							<div class="hovImg hovImg1">
+								<img src="img/hovimg.jpg" alt="" class="txtImg1" />
+								<p class="pri">￥799</p>
+							</div>
+							<div class="con2Txt">
+								<img src="img/primary.png" alt="" class="txtImg2" />
+								<span class="spaTxt">
+									<i class="iconfont icon-aixin"></i>
+									收藏品牌
+								</span>
+								<span class="spaTxt1">进入专场</span>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--content e-->
+
+		<!--footer s-->
+		<div id="footer">
+			<div class="forCon main">
+				<ul class="listImg clearfixed">
+					<li class="line"></li>
+					<li class="line"></li>
+					<li class="line"></li>
+					<li class="line"></li>
+					<li class="line"></li>
+					<li class="line"></li>
+					<li class="line"></li>
+					<li class="line"></li>
+					<li class="line"></li>
+					<li class="line"></li>
+				</ul>
+				<div class="boxNav">
+					<dl class="fooNav">
+						<dt class="tit"><a href="">服务保障</a></dt>
+						<dd class="dis"><a href="">正品保证</a></dd>
+						<dd class="dis"><a href="">7天无理由放心退</a></dd>
+						<dd class="dis"><a href="">退货返运费</a></dd>
+						<dd class="dis"><a href="">7x15小时客户服务</a></dd>
+					</dl>
+					<dl class="fooNav">
+						<dt class="tit"><a href="">服务保障</a></dt>
+						<dd class="dis"><a href="">正品保证</a></dd>
+						<dd class="dis"><a href="">7天无理由放心退</a></dd>
+						<dd class="dis"><a href="">退货返运费</a></dd>
+						<dd class="dis"><a href="">7x15小时客户服务</a></dd>
+					</dl>
+					<dl class="fooNav">
+						<dt class="tit"><a href="">服务保障</a></dt>
+						<dd class="dis"><a href="">正品保证</a></dd>
+						<dd class="dis"><a href="">7天无理由放心退</a></dd>
+						<dd class="dis"><a href="">退货返运费</a></dd>
+						<dd class="dis"><a href="">7x15小时客户服务</a></dd>
+					</dl>
+					<dl class="fooNav">
+						<dt class="tit"><a href="">服务保障</a></dt>
+						<dd class="dis"><a href="">正品保证</a></dd>
+						<dd class="dis"><a href="">7天无理由放心退</a></dd>
+						<dd class="dis"><a href="">退货返运费</a></dd>
+						<dd class="dis"><a href="">7x15小时客户服务</a></dd>
+					</dl>
+					<dl class="fooNav">
+						<dt class="tit"><a href="">服务保障</a></dt>
+						<dd class="dis"><a href="">正品保证</a></dd>
+						<dd class="dis"><a href="">7天无理由放心退</a></dd>
+						<dd class="dis"><a href="">退货返运费</a></dd>
+						<dd class="dis"><a href="">7x15小时客户服务</a></dd>
+					</dl>
+					<dl class="fooNav fooLast">
+						<dt class="titEwm">唯品会APP二维码</dt>
+						<dd class="ewm">
+							<img src="img/ewm.png" alt="" />
+							<p>下载唯品会移动APP</p>
+						</dd>
+					</dl>
+				</div>
+				<div class="forbut">
+					<p class="butTxt">
+						<a href="" title="关于我们">关于我们| </a>
+						<a href="" title="About us">About us| </a>
+						<a href="" title="Investor Relations">Investor Relations| </a>
+						<a href="" title="媒体报道">媒体报道| </a>
+						<a href="" title="品牌招商">品牌招商| </a>
+						<a href="" title="隐私条款"> 隐私条款| </a>
+						<a href="" title="唯品诚聘"> 唯品诚聘| </a>
+						<a href="" title="365爱心基金"> 365爱心基金| </a>
+						<a href="" title="唯品卡">唯品卡| </a>
+						<a href="" title="联系我们">联系我们</a>
+					</p>
+					<p class="butTxt1">
+						Copyright © 2008-2017 vip.com，All Rights Reserved  使用本网站即表示接受
+						<a href="">唯品会用户协议</a>。
+						版权所有 
+						<a href="">广州唯品会信息科技有限公司</a>
+					</p>
+					<p class="butTxt1">
+						<img src="img/police_icon.png" class="police" />
+						<a href="">粤公网安备 44010302111111号  </a>
+						<a href="">粤ICP备08114786号 </a>
+						<a href="">ICP经营许可证：粤B2-20080329 </a>
+						<a href="">网络文化经营许可证：粤网文〔2015〕1528-229</a>
+					</p>
+					<p class="butTxt1">
+						<a href="">自营主体经营证照  </a>
+						<a href="">风险监测信息  </a>
+						<a href="">互联网药品交易服务资格证（粤C20140002）</a>
+					</p>
+				</div>
+			</div>
+			<div class="forImg">
+				<div class="forCon1 main">
+					<ul class="listForImg clearfixed">
+						<li class="listImg innerImg1"><a href=""></a></li>
+						<li class="listImg innerImg2"><a href=""></a></li>
+						<li class="listImg innerImg3"><a href=""></a></li>
+						<li class="listImg innerImg4"><a href=""></a></li>
+						<li class="listImg innerImg5"><a href=""></a></li>
+						<li class="listImg innerImg6"><a href=""></a></li>
+						<li class="listImg innerImg7"><a href=""></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--footer e-->
+	</div>
+	<!--wrap e-->
+</body>
+</html>
