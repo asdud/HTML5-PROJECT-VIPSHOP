@@ -1,6 +1,6 @@
-#practise.html 
+#practice.html 
 
-#practise.html是本次HTML5的练习
+#practice.html是本次HTML5的练习
 
 #Vipshop.html 是从唯品会网址下载的代码
 
